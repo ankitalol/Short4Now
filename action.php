@@ -83,7 +83,7 @@ while ($l>=1)
 //echo $surl_str; 
 //$sql = "INSERT INTO URLTables(url,ulength,uni_code) VALUES('$uname',$l,'$surl')";
 mysqli_query($conn,"INSERT INTO URLTables(url,length,uni_code) 
-VALUES('$uname',$arrlength,'$surl_str')");
+VALUES("$uname",$arrlength,"$surl_str")");
     /*if ($conn->query($sql) === TRUE) {echo "New record created successfully";} else {echo "Error: " . $sql . "<br>" . $conn->error;}*/
   
    
