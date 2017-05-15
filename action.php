@@ -24,9 +24,9 @@ The length of the url input is
         <?php
 function encode_url()
 {
-$servername = "localhost";
+$servername = "128.199.246.40";
 $username = "root";
-$password = "root";
+$password = "test123$";
 $database = "Tinyurltable";
 $conn = new mysqli($servername, $username, $password,$database);
 $l= strlen($_GET["unme"]) ;
@@ -35,7 +35,7 @@ $uname = $_GET["unme"];
  echo ($l) ;
      echo "<br>"; 
     $i=0;     
- $site ="http://localhost:8888";
+ $site ="http://Short4Now";
         /* $lastid = $conn->insert_id;
         echo $lastid;
         $lone = $lastid++;*/
@@ -79,16 +79,12 @@ while ($l>=1)
             }  
         }
  // echo "uni_code:" . $row["uni_code"]."<br>";
-        // }
-//echo $surl_str; 
+  
 //$sql = "INSERT INTO URLTables(url,ulength,uni_code) VALUES('$uname',$l,'$surl')";
 mysqli_query($conn,"INSERT INTO URLTables(url,length,uni_code) 
 VALUES('$uname',$arrlength,'$surl_str')");
-    /*if ($conn->query($sql) === TRUE) {echo "New record created successfully";} else {echo "Error: " . $sql . "<br>" . $conn->error;}*/
-  
-   
-    echo "<br>";
-    
+    /*if ($conn->query($sql) === TRUE) {echo "New record created successfully";} else {echo "Error: " . $sql . "<br>" . $conn->error;}*/  
+    echo "<br>";   
     echo "Here is your shortened URL ";
     echo "<br>";
     echo "<input type ='text' size = '50' value = '$site/$surl_str'>";
