@@ -35,7 +35,7 @@ $uname = $_GET["unme"];
  echo ($l) ;
      echo "<br>"; 
     $i=0;     
- $site ="http://localhost:8888";
+ $site ="http://128.199.246.40";
         /* $lastid = $conn->insert_id;
         echo $lastid;
         $lone = $lastid++;*/
@@ -91,7 +91,7 @@ VALUES('$uname',$arrlength,'$surl_str')");
     
     echo "Here is your shortened URL ";
     echo "<br>";
-    echo "<input type ='text' size = '50' value = '$site/$surl_str'>";
+    echo "<input type ='text' size = '50' value = 'http://Short4Now/$surl_str'>";
 }
 encode_url(); 
    
