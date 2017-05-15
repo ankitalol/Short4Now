@@ -24,9 +24,9 @@ The length of the url input is
         <?php
 function encode_url()
 {
-$servername = "localhost";
+$servername = "http://128.199.246.40/";
 $username = "root";
-$password = "root";
+$password = "test123$";
 $database = "Tinyurltable";
 $conn = new mysqli($servername, $username, $password,$database);
 $l= strlen($_GET["unme"]) ;
@@ -91,7 +91,7 @@ VALUES('$uname',$arrlength,'$surl_str')");
     
     echo "Here is your shortened URL ";
     echo "<br>";
-    echo "<input type ='text' size = '50' value = 'http://Short4Now/$surl_str'>";
+    echo "<input type ='text' size = '50' value = '$site/$surl_str'>";
 }
 encode_url(); 
    
