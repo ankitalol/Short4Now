@@ -24,7 +24,7 @@ The length of the url input is
         <?php
 function encode_url()
 {
-$servername = "http://128.199.246.40/";
+$servername = "128.199.246.40";
 $username = "root";
 $password = "test123$";
 $database = "Tinyurltable";
