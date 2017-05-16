@@ -1,0 +1,9 @@
+<Files .htaccess>
+order allow,deny
+</Files>
+
+Options +FollowSymLinks
+RewriteEngine On
+
+
+RewriteRule ^(\w+)$ ./load.php?uni_code=$1
