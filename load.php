@@ -33,12 +33,14 @@ $i=0;
                  if($durl == "www")
                  {
                     $burl = "http://" .$url;
+                     echo $burl;
+                     exit();
              header("HTTP/1.1 301 Moved Permanently");
                header( "Location: $burl");
                  }
                else{
                    header("HTTP/1.1 301 Moved Permanently");
-               header( "Location: $url");
+                  header( "Location: $url");
                    
               }  
                
