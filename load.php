@@ -4,7 +4,9 @@
 function decode_url()
 {   
 $servername = "128.199.246.40";
+//  $servername = "localhost";  
 $username = "root";
+   // $password = "root";
 $password = "test123$";
 $database = "Tinyurltable";
 $conn = new mysqli($servername, $username, $password,$database);
@@ -33,14 +35,16 @@ $i=0;
                  if($durl == "www")
                  {
                     $burl = "http://" .$url;
-                     echo $burl;
-                     exit();
+                    // echo $burl;
+                     //exit();
              header("HTTP/1.1 301 Moved Permanently");
                header( "Location: $burl");
                  }
                else{
                    header("HTTP/1.1 301 Moved Permanently");
                   header( "Location: $url");
+                  // echo $url;
+                
                    
               }  
                

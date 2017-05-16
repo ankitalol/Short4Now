@@ -1,9 +1,9 @@
 <?php
 function encode_url()
 {
-$servername = "localhost";
+$servername = "128.199.246.40";
 $username = "root";
-$password = "root";
+$password = "test123$";
 $database = "Tinyurltable";
 $conn = new mysqli($servername, $username, $password,$database);
 $l= strlen($_GET["unme"]) ;
