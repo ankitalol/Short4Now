@@ -13,7 +13,7 @@ $uname = $_GET["unme"];
      echo "<br>"; echo "<br>";
     $i=0;     
  echo "<br>";
- 
+    $site ="http://128.199.246.40";
         /* $lastid = $conn->insert_id;
         echo $lastid;
         $lone = $lastid++;*/

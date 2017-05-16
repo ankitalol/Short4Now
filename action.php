@@ -35,7 +35,7 @@ $uname = $_GET["unme"];
  echo ($l) ;
      echo "<br>"; 
     $i=0;     
- $site ="http://Short4Now";
+ $site ="http://128.199.246.40";
         /* $lastid = $conn->insert_id;
         echo $lastid;
         $lone = $lastid++;*/
